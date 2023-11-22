@@ -14,9 +14,9 @@
 <body class="wrapper">
   <header class="header">
     <div class="container">
-      <a href="/" class="link__logo">
-        <img src="./images/logo_welbex.svg" alt="Welbex" aria-label="На главную." class="link__logo-image">
-        <p class="link__logo-sign">крупный интегратор CRM в Росcии и ещё 8 странах</p>
+      <a href="/" class="link-logo">
+        <img src="./images/logo_welbex.svg" alt="Welbex" aria-label="На главную." class="link-logo__image">
+        <p class="link-logo__sign">крупный интегратор CRM в Росcии и ещё 8 странах</p>
       </a>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -29,7 +29,7 @@
       </nav>
     </div>
     <div class="container">
-      <a href="tel:+75555555555" class="link__phone">+7 555 555-55-55</a>
+      <a href="tel:+75555555555" class="link-phone margin_right_m">+7 555 555-55-55</a>
       <nav class="navigation">
         <ul class="navigation__list" aria-label="Мы в соцсетях.">
           <li><a href="#" class="navigation__link">
@@ -47,7 +47,56 @@
   </header>
 
   <main class="main"></main>
-  <footer class="footer"></footer>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="navigation margin_right_b">
+        <h2 class="navigation__heading">О компании</h2>
+        <ul class="navigation__list navigation_column">
+          <li><a href="/" class="navigation__link navigation__link_thinging">Партнёрская программа</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Вакансии</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navigation">
+        <h2 class="navigation__heading">Меню</h2>
+        <ul class="navigation__list navigation_column">
+          <li><a href="/" class="navigation__link navigation__link_thinging">Расчёт стоимости</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Услуги</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Виджеты</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Интеграции</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Наши клиенты</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Кейсы</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Благодарственные письма</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Сертификаты</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Блог на Youtube</a></li>
+          <li><a href="/" class="navigation__link navigation__link_thinging">Вопрос / Ответ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contacts">
+      <h2 class="contacts__heading contacts_margin-s">Контакты</h2>
+      <a href="tel:+75555555555" class="link-phone">+7 555 555-55-55</a>
+      <nav class="navigation">
+        <ul class="navigation__list navigation_small-gap" aria-label="Мы в соцсетях.">
+          <li><a href="#" class="navigation__link">
+            <img src="./images/telegram.svg" alt="Telegram" aria-label="Telegramю">
+          </a></li>
+          <li><a href="#" class="navigation__link">
+            <img src="./images/viber.svg" alt="Viber" aria-label="Viber.">
+          </a></li>
+          <li><a href="#" class="navigation__link">
+            <img src="./images/whatsapp.svg" alt="WhatsApp" aria-label="WhatsApp.">
+          </a></li>
+        </ul>
+      </nav>
+      <p class="contacts__text margin_bottom_b">Москва, Путевой проезд 3с1, к 902</p>
+      <div class="contacts__policy">
+        ©WELBEX 2022. Все права защищены.
+        <a href="/" class="contacts__policy-link">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

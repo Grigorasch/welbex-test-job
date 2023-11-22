@@ -1,5 +1,6 @@
 $color_background: #0e1014;
 $colot_text-light: #e4e5ea;
+$colot_text-gray: #656566;
 
 .wrapper {
   position: relative;
@@ -14,10 +15,18 @@ $colot_text-light: #e4e5ea;
   background: $color_background;
 }
 
-.header {
-  margin: 0 0 94px;
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
+}
+
+.header {
+  margin: 0 0 94px;
+}
+
+.footer {
+  margin: 0 0 20px;
 }
 
 .container {
@@ -27,48 +36,55 @@ $colot_text-light: #e4e5ea;
   align-items: flex-start;
 }
 
-.link {
-  &__logo {
+.link-logo {
+  display: inline-block;
+  margin: 0 52px 0 0;
+  width: min-content;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: $colot_text-light;
+  text-decoration: none;
+
+  &__image {
     display: inline-block;
-    margin: 0 52px 0 0;
-    width: min-content;
-
-    font-family: "Montserrat", Arial, sans-serif;
-    font-size: 10px;
-    font-weight: 300;
-    color: $colot_text-light;
-    text-decoration: none;
-
-    &-image {
-      display: inline-block;
-      margin: 0 0 10px;
-      padding: 0;
-      width: 140px;
-      vertical-align: top;
-    }
-
-    &-sign {
-      margin: 0;
-      padding: 0;
-    }
+    margin: 0 0 10px;
+    padding: 0;
+    width: 140px;
+    vertical-align: top;
   }
 
-  &__phone {
-    display: block;
-    margin: 0 47px 0 0;
-    padding: 4px 0 0;
-    height: 100%;
-
-    font-size: 16px;
-    font-weight: 500;
-    color: $colot_text-light;
-    text-decoration: none;
+  &__sign {
+    margin: 0;
+    padding: 0;
   }
+}
+
+.link-phone {
+  display: block;
+  margin: 0;
+  padding: 4px 0 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: $colot_text-light;
+  text-decoration: none;
 }
 
 .navigation {
   margin: 0;
   padding: 4px 0 0;
+
+  &__heading {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: $colot_text-gray;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
 
   &__list {
     margin: 0;
@@ -83,5 +99,87 @@ $colot_text-light: #e4e5ea;
     font-weight: 500;
     color: $colot_text-light;
     text-decoration: none;
+
+    &_thinging {
+      font-weight: 400;
+    }
+  }
+
+  &_column {
+    max-height: 140px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 52px;
+  }
+
+  &_small-gap {
+    gap: 10px;
+  }
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: $colot_text-gray;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: $colot_text-light;
+  }
+
+  &__policy {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: $colot_text-light;
+    text-align: end;
+
+    &-link {
+      display: block;
+      font: inherit;
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.margin {
+  &_bottom {
+    &_b {
+      margin-bottom: 50px;
+    }
+  }
+
+  &_right {
+    &_b {
+      margin-right: 98px;
+    }
+
+    &_m {
+      margin-right: 47px;
+    }
   }
 }
