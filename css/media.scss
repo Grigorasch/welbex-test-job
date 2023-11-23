@@ -77,7 +77,7 @@
     }
 
     .header {
-        margin-bottom: 40px;
+        margin: 0;
     }
 
     .navigation {
@@ -88,6 +88,7 @@
     }
 
     .main {
+        padding-top: 40px;
         flex-direction: column;
 
         &__heading {
@@ -158,6 +159,18 @@
             }
         }
     }
+
+    .background {
+        position: relative;
+      
+        &__red-light, &__purple-light, &__red-ball, &__red-ball-big, &__purple-ball { 
+          display: none;
+        }
+      
+        &__mobile {
+          display: block;
+        }
+      }
 }
 
 @media screen and (max-width: 480px) {

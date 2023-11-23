@@ -49,13 +49,14 @@
     padding: 0 16px;
   }
   .header {
-    margin-bottom: 40px;
+    margin: 0;
   }
   .navigation__link {
     font-size: 12px;
     text-transform: uppercase;
   }
   .main {
+    padding-top: 40px;
     flex-direction: column;
   }
   .main__heading {
@@ -109,6 +110,15 @@
   }
   .media-query_mobile_margin-bottom_small {
     margin-bottom: 20px;
+  }
+  .background {
+    position: relative;
+  }
+  .background__red-light, .background__purple-light, .background__red-ball, .background__red-ball-big, .background__purple-ball {
+    display: none;
+  }
+  .background__mobile {
+    display: block;
   }
 }
 @media screen and (max-width: 480px) {

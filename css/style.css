@@ -249,6 +249,7 @@
 
 .background {
   position: relative;
+  z-index: -1;
 }
 .background__red-light {
   position: absolute;
@@ -304,4 +305,15 @@
   filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+}
+.background__mobile {
+  display: none;
+  position: absolute;
+  left: -16px;
+  top: 55px;
+  width: 100vw;
+  height: 445px;
+  background: url(../images/bg.png);
+  background-size: cover;
+  background-position: right bottom;
 }

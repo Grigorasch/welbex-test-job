@@ -305,6 +305,7 @@ $color_button_background: #4077f3;
 
 .background {
   position: relative;
+  z-index: -1;
 
   &__red-light {
     position: absolute;
@@ -384,5 +385,18 @@ $color_button_background: #4077f3;
     );
     filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
     backdrop-filter: blur(2px);
+  }
+
+  &__mobile {
+    display: none;
+    position: absolute;
+    left: -16px;
+    top: 55px;
+
+    width: 100vw;
+    height: 445px;
+    background: url(../images/bg.png);
+    background-size: cover;
+    background-position: right bottom;
   }
 }
