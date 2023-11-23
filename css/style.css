@@ -104,6 +104,81 @@
   gap: 10px;
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  color: #e4e5ea;
+}
+.main__heading {
+  margin: 0 0 30px;
+  padding: 0;
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 48px;
+}
+.main__heading-sign {
+  width: 275px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.content-heading {
+  margin: 0 0 40px auto;
+  padding: 0;
+  width: 290px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #e4e5ea;
+  text-align: end;
+  background: linear-gradient(to right, #fcb045, #ff3f78);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.content__list {
+  margin: 0 0 60px auto;
+  padding: 0;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+.content__item {
+  width: 140px;
+}
+.content__item-heading {
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #e4e5ea;
+  text-align: end;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.content__item-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #e4e5ea;
+  text-align: end;
+}
+.content__button {
+  display: block;
+  margin: 0 0 124px auto;
+  padding: 21px 35px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e4e5ea;
+  background-color: #4077f3;
+  border: none;
+}
+
 .contacts {
   margin: 0;
   padding: 0;
@@ -144,12 +219,31 @@
   text-decoration: underline;
 }
 
-.margin_bottom_b {
+.margin_bottom_big {
   margin-bottom: 50px;
 }
-.margin_right_b {
+.margin_right_big {
   margin-right: 98px;
 }
-.margin_right_m {
+.margin_right_medium {
   margin-right: 47px;
+}
+
+.text_weight_bold {
+  font-weight: 700;
+}
+.text_weight_black {
+  font-size: 48px;
+  font-weight: 900;
+}
+.text_background_gradient {
+  background: linear-gradient(to right, #fcb045, #ff3f78);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.text_color_transparent {
+  -webkit-text-fill-color: transparent;
+  color: #e4e5ea;
 }

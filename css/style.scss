@@ -1,6 +1,7 @@
 $color_background: #0e1014;
-$colot_text-light: #e4e5ea;
-$colot_text-gray: #656566;
+$color_text-light: #e4e5ea;
+$color_text-gray: #656566;
+$color_button_background: #4077f3;
 
 .wrapper {
   position: relative;
@@ -44,7 +45,7 @@ $colot_text-gray: #656566;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 10px;
   font-weight: 300;
-  color: $colot_text-light;
+  color: $color_text-light;
   text-decoration: none;
 
   &__image {
@@ -68,7 +69,7 @@ $colot_text-gray: #656566;
 
   font-size: 16px;
   font-weight: 500;
-  color: $colot_text-light;
+  color: $color_text-light;
   text-decoration: none;
 }
 
@@ -81,7 +82,7 @@ $colot_text-gray: #656566;
     padding: 0;
     font-size: 14px;
     font-weight: 700;
-    color: $colot_text-gray;
+    color: $color_text-gray;
     letter-spacing: 0.7px;
     text-transform: uppercase;
   }
@@ -97,7 +98,7 @@ $colot_text-gray: #656566;
   &__link {
     font-size: 16px;
     font-weight: 500;
-    color: $colot_text-light;
+    color: $color_text-light;
     text-decoration: none;
 
     &_thinging {
@@ -118,6 +119,96 @@ $colot_text-gray: #656566;
   }
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 400;
+  color: $color_text-light;
+
+  &__heading {
+    margin: 0 0 30px;
+    padding: 0;
+    width: min-content;
+    font-size: 48px;
+
+    &-sign {
+      width: 275px;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+.content {
+  &-heading {
+    margin: 0 0 40px auto;
+    padding: 0;
+    width: 290px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: $color_text-light;
+    text-align: end;
+
+    background: linear-gradient(to right, #fcb045, #ff3f78);
+    background-clip: text;
+  }
+
+  &__list {
+    margin: 0 0 60px auto;
+    padding: 0;
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+  }
+
+  &__item {
+    width: 140px;
+
+    &-heading {
+      margin: 0 0 8px;
+      padding: 0;
+
+      font-size: 18px;
+      font-weight: 500;
+      color: $color_text-light;
+      text-align: end;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      margin: 0;
+      padding: 0;
+
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: $color_text-light;
+      text-align: end;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 0 124px auto;
+    padding: 21px 35px;
+  
+    font-size: 16px;
+    font-weight: 500;
+    color: $color_text-light;
+    background-color: $color_button_background;
+  
+    border: none;
+  }
+}
+
 .contacts {
   margin: 0;
   padding: 0;
@@ -133,7 +224,7 @@ $colot_text-gray: #656566;
 
     font-size: 14px;
     font-weight: 700;
-    color: $colot_text-gray;
+    color: $color_text-gray;
     letter-spacing: 0.7px;
     text-transform: uppercase;
   }
@@ -144,7 +235,7 @@ $colot_text-gray: #656566;
 
     font-size: 16px;
     font-weight: 400;
-    color: $colot_text-light;
+    color: $color_text-light;
   }
 
   &__policy {
@@ -154,7 +245,7 @@ $colot_text-gray: #656566;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 12px;
     font-weight: 400;
-    color: $colot_text-light;
+    color: $color_text-light;
     text-align: end;
 
     &-link {
@@ -168,18 +259,47 @@ $colot_text-gray: #656566;
 
 .margin {
   &_bottom {
-    &_b {
+    &_big {
       margin-bottom: 50px;
     }
   }
 
   &_right {
-    &_b {
+    &_big {
       margin-right: 98px;
     }
 
-    &_m {
+    &_medium {
       margin-right: 47px;
+    }
+  }
+}
+
+.text {
+  &_weight {
+    &_bold {
+      font-weight: 700;
+    }
+
+    &_black {
+      font-size: 48px;
+      font-weight: 900;
+    }
+  }
+
+  &_background {
+    &_gradient {
+      background: linear-gradient(to right, #fcb045, #ff3f78);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+  }
+
+  &_color {
+    &_transparent {
+      -webkit-text-fill-color: transparent;
+      color: $color_text-light;
     }
   }
 }
