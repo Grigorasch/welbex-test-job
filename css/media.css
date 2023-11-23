@@ -54,9 +54,16 @@
   .navigation__heading {
     font-size: 12px;
   }
+  .navigation__item {
+	  flex-basis: 35%;
+  }
   .navigation__link {
     font-size: 12px;
     text-transform: uppercase;
+  }
+  .navigation_column {
+	  max-height: fit-content;
+	  flex-direction: row;
   }
   .main {
     padding-top: 40px;
