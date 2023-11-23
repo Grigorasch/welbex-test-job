@@ -8,28 +8,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Weblex</title>
 </head>
 
 <body class="wrapper">
+  <div class="background">
+    <div class="background__red-light"></div>
+    <div class="background__purple-light"></div>
+    <img src="./images/red_ball.svg" alt="" class="background__red-ball">
+    <img src="./images/red_ball_big.svg" alt="" class="background__red-ball-big">
+    <img src="./images/purple_ball.svg" alt="" class="background__purple-ball">
+  </div>
   <header class="header">
     <div class="container">
       <a href="/" class="link-logo">
         <img src="./images/logo_welbex.svg" alt="Welbex" aria-label="На главную." class="link-logo__image">
         <p class="link-logo__sign">крупный интегратор CRM в Росcии и ещё 8 странах</p>
       </a>
-      <nav class="navigation">
+      <nav class="navigation media-query_mobile_margin-bottom_small">
         <ul class="navigation__list">
           <li><a href="#" class="navigation__link">Услуги</a></li>
           <li><a href="#" class="navigation__link">Виджеты</a></li>
           <li><a href="#" class="navigation__link">Виджеты</a></li>
           <li><a href="#" class="navigation__link">Кейсы</a></li>
-          <li><a href="#" class="navigation__link">Сертификаты</a></li>
+          <li class="media-query_mobile_hidden"><a href="#" class="navigation__link">Сертификаты</a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="container">
+    <div class="container media-query_tablet_hidden">
       <a href="tel:+75555555555" class="link-phone margin_right_medium">+7 555 555-55-55</a>
       <nav class="navigation">
         <ul class="navigation__list" aria-label="Мы в соцсетях.">
@@ -79,7 +87,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container media-query_tablet_flex-column">
       <nav class="navigation margin_right_big">
         <h2 class="navigation__heading">О компании</h2>
         <ul class="navigation__list navigation_column">
@@ -88,7 +96,7 @@
         </ul>
       </nav>
 
-      <nav class="navigation">
+      <nav class="navigation media-query_tablet_margin-bottom_small">
         <h2 class="navigation__heading">Меню</h2>
         <ul class="navigation__list navigation_column">
           <li><a href="/" class="navigation__link navigation__link_thinging">Расчёт стоимости</a></li>

@@ -199,12 +199,12 @@ $color_button_background: #4077f3;
     display: block;
     margin: 0 0 124px auto;
     padding: 21px 35px;
-  
+
     font-size: 16px;
     font-weight: 500;
     color: $color_text-light;
     background-color: $color_button_background;
-  
+
     border: none;
   }
 }
@@ -282,7 +282,6 @@ $color_button_background: #4077f3;
     }
 
     &_black {
-      font-size: 48px;
       font-weight: 900;
     }
   }
@@ -301,5 +300,89 @@ $color_button_background: #4077f3;
       -webkit-text-fill-color: transparent;
       color: $color_text-light;
     }
+  }
+}
+
+.background {
+  position: relative;
+
+  &__red-light {
+    position: absolute;
+    left: -102px;
+    top: 251px;
+
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(196px);
+  }
+
+  &__purple-light {
+    position: absolute;
+    left: 602px;
+    top: -154px;
+
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(196px);
+  }
+
+  &__red-ball {
+    position: absolute;
+    left: 704px;
+    top: 547px;
+
+    width: 62px;
+    height: 62px;
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.48) 0%,
+      rgba(212, 93, 93, 0.25) 59.67%,
+      rgba(167, 49, 49, 0.26) 78.59%,
+      rgba(130, 25, 25, 0.23) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+    backdrop-filter: blur(2px);
+  }
+
+  &__red-ball-big {
+    position: absolute;
+    left: 369px;
+    top: 83px;
+
+    width: 83px;
+    height: 83px;
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.54) 0%,
+      rgba(212, 93, 93, 0.26) 59.67%,
+      rgba(167, 49, 49, 0.25) 78.59%,
+      rgba(130, 25, 25, 0.25) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
+  }
+
+  &__purple-ball {
+    position: absolute;
+    left: 718px;
+    top: -2px;
+
+    width: 60px;
+    height: 60px;
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(236, 208, 255, 0.64) 0%,
+      rgba(161, 93, 207, 0.24) 59.67%,
+      rgba(118, 49, 164, 0.21) 78.59%,
+      rgba(86, 24, 128, 0.23) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
   }
 }
