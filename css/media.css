@@ -51,6 +51,9 @@
   .header {
     margin: 0;
   }
+  .navigation__heading {
+    font-size: 12px;
+  }
   .navigation__link {
     font-size: 12px;
     text-transform: uppercase;
@@ -62,6 +65,9 @@
   .main__heading {
     margin-bottom: 15px;
     font-weight: 400;
+  }
+  .main__heading-sign {
+    margin-bottom: 45px;
   }
   .content-heading {
     margin-bottom: 20px;
@@ -107,9 +113,13 @@
   }
   .footer {
     margin-bottom: 60px;
+    padding-top: 50px;
   }
   .media-query_mobile_margin-bottom_small {
     margin-bottom: 20px;
+  }
+  .media-query_mobile_text-size_medium {
+    font-size: 14px;
   }
   .background {
     position: relative;

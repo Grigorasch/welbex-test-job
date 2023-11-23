@@ -81,6 +81,10 @@
     }
 
     .navigation {
+        &__heading {
+            font-size: 12px;
+        }
+
         &__link {
             font-size: 12px;
             text-transform: uppercase;
@@ -94,6 +98,10 @@
         &__heading {
             margin-bottom: 15px;
             font-weight: 400;
+
+            &-sign {
+                margin-bottom: 45px;
+            }
         }
     }
 
@@ -148,6 +156,7 @@
 
     .footer {
         margin-bottom: 60px;
+        padding-top: 50px;
     }
 
     .media-query {
@@ -157,20 +166,28 @@
                     margin-bottom: 20px;
                 }
             }
+
+            &_text-size_medium {
+                font-size: 14px;
+            }
         }
     }
 
     .background {
         position: relative;
-      
-        &__red-light, &__purple-light, &__red-ball, &__red-ball-big, &__purple-ball { 
-          display: none;
+
+        &__red-light,
+        &__purple-light,
+        &__red-ball,
+        &__red-ball-big,
+        &__purple-ball {
+            display: none;
         }
-      
+
         &__mobile {
-          display: block;
+            display: block;
         }
-      }
+    }
 }
 
 @media screen and (max-width: 480px) {
